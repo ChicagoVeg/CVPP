@@ -9,7 +9,6 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: aria
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -105,6 +104,10 @@ body {
     border-bottom: 0;
     border-top: 0;
     border-collapse: collapse;
+}
+
+.tabLI li {
+  margin-left: 20px;
 }
 
 /* Responsive: Portrait tablets and up */
