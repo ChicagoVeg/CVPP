@@ -7,7 +7,7 @@
  body { line-height: 1; }
  input:focus, select:focus, textarea:focus, button:focus { outline: none; }
  html { height: 100%; }
- body { height: 100%; font-size: 15px; font-family: 'Times New Roman', Times, serif; line-height: 2; background: #ffffff; color: #333333; -webkit-font-smoothing: antialiased !important; -moz-font-smoothing: antialiased !important; -o-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale; }
+ body { height: 100%; font-size: 15px; font-family: arial; line-height: 2; background: #ffffff; color: #333333; -webkit-font-smoothing: antialiased !important; -moz-font-smoothing: antialiased !important; -o-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale; }
  #wrapper, #content { display: block; max-width: 1080px; }
  @media (min-width: 1640px) {
  #wrapper { margin: 0 !important; }
@@ -223,9 +223,9 @@
  .wsite-form-field { margin: 0 0 2em !important; }
  .wsite-form-label, #commentPostDiv .field label { display: inline-block; color: #000000; font-family: 'Maven Pro'; font-size: 1.15em; font-weight: 900; text-transform: uppercase; line-height: 1; padding: 0 0 .5em; }
  .form-required { color: #000000; font-weight: normal !important; }
- .wsite-form-input { font-size: 1.15em; font-family: 'Times New Roman', Times, serif; color: #000000; background: #ffffff; padding: 12px !important; border-radius: 0 !important; border: 1px solid #cccccc; -webkit-box-shadow: 0px 4px 0px 0px #ffffff; -moz-box-shadow: 0px 4px 0px 0px #ffffff; box-shadow: 0px 4px 0px 0px #ffffff; }
+ .wsite-form-input { font-size: 1.15em; font-family: arial; color: #000000; background: #ffffff; padding: 12px !important; border-radius: 0 !important; border: 1px solid #cccccc; -webkit-box-shadow: 0px 4px 0px 0px #ffffff; -moz-box-shadow: 0px 4px 0px 0px #ffffff; box-shadow: 0px 4px 0px 0px #ffffff; }
  .wsite-form-input:focus { border-bottom: 0; padding: 12px 12px 13px !important; -webkit-box-shadow: 0px 4px 0px 0px #000000; -moz-box-shadow: 0px 4px 0px 0px #000000; box-shadow: 0px 4px 0px 0px #000000; }
- .wsite-search-element-input, #wsite-search-query { font-size: 1.15em; font-family: 'Times New Roman', Times, serif; color: #000000; background: #ffffff; padding: 8px 16px !important; border: 1px solid #cccccc; border-radius: 20px !important; }
+ .wsite-search-element-input, #wsite-search-query { font-size: 1.15em; font-family: arial; color: #000000; background: #ffffff; padding: 8px 16px !important; border: 1px solid #cccccc; border-radius: 20px !important; }
  #wsite-search-header { border: none; width: 70%; }
  #wsite-search-header h2 { font-weight: 900; font-size: 28px; width: auto !important; margin-right: 40px; padding: 6px 0 0; text-align: left; }
  #wsite-search-form-container { float: left; width: 65%; text-align: left; }
@@ -517,7 +517,7 @@
  .blogCommentReplyWrapper, .blogCommentReplyWrapper iframe { height: 660px !important; }
  #commentPostDiv .commentInput, #commentPostDiv .commentTextarea { padding: 0 !important; }
  #commentPostDiv .field input[type=text], #commentPostDiv .field textarea { margin: 0 !important; }
- #commentPostDiv .commentInput > input, .commentTextarea > textarea { font-size: 1.15em !important; font-family: 'Times New Roman', Times, serif !important; color: #000000 !important; background: #ffffff !important; padding: 12px !important; border-radius: 0 !important; border: 1px solid #cccccc !important; -webkit-box-shadow: 0px 4px 0px 0px #ffffff !important; -moz-box-shadow: 0px 4px 0px 0px #ffffff !important; box-shadow: 0px 4px 0px 0px #ffffff !important; }
+ #commentPostDiv .commentInput > input, .commentTextarea > textarea { font-size: 1.15em !important; font-family: arial !important; color: #000000 !important; background: #ffffff !important; padding: 12px !important; border-radius: 0 !important; border: 1px solid #cccccc !important; -webkit-box-shadow: 0px 4px 0px 0px #ffffff !important; -moz-box-shadow: 0px 4px 0px 0px #ffffff !important; box-shadow: 0px 4px 0px 0px #ffffff !important; }
  .commentTextarea > textarea { width: 125% !important; height: 150px !important; }
  #commentPostDiv .commentInput > input:focus, .commentTextarea > textarea:focus { border-bottom: 0 !important; padding: 12px 12px 13px !important; -webkit-box-shadow: 0px 4px 0px 0px #000000 !important; -moz-box-shadow: 0px 4px 0px 0px #000000 !important; box-shadow: 0px 4px 0px 0px #000000 !important; }
  #commentPostDiv .field label { padding: 0 !important; }

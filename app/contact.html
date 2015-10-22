@@ -278,112 +278,43 @@
           </h1>
 
 <div class="center-block">
-<table border="1" cellpadding="4" cellspacing="1" bgcolor="#FFFFFF" width="226">
-<tbody><tr>
-<td>
 
-<p align="center"><font face="Arial" size="3"><b>Contact Form</b></font></p>
+ 
+<!-- Based on: http://www.the-art-of-web.com/javascript/feedback-modal-window/ -->
+<form action="contactus.php" method="post" enctype="multipart/form-data" style="padding:5px;">
+  <div class="form-group">
+    <label>Name</label> 
+    <input name="name" required="required" class="form-control">
+  </div>
 
-    <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script language="JavaScript" type="text/javascript"><!--
-function FrontPage_Form1_Validator(theForm)
-{
+  <div class="form-group">   
+    <label style="float: left;">E-Mail</label> <br />
+    <input name="email" type="email" required="required" class="form-control">
+  </div>
 
-  if (theForm.Name.value == "")
-  {
-    alert("Please enter a value for the \"Name\" field.");
-    theForm.Name.focus();
-    return (false);
-  }
+  <div class="form-group">
+    <label style="float: left;">Message</label> <br />
+    <textarea  class="form-control" name="message" cols="20" rows="5" required="required" ></textarea> 
+  </div>
 
-  if (theForm.Name.value.length < 2)
-  {
-    alert("Please enter at least 2 characters in the \"Name\" field.");
-    theForm.Name.focus();
-    return (false);
-  }
+  <div class="form-group">
+      <small>copy the digits from the image into this box</small><br />
+ <img src="./captcha.php" width="120" height="30" border="1" alt="CAPTCHA">
+    <p><input type="text" size="6" maxlength="5" name="captcha" value="" class="captchaBox" required><br>
 
-  if (theForm.Name.value.length > 50)
-  {
-    alert("Please enter at most 50 characters in the \"Name\" field.");
-    theForm.Name.focus();
-    return (false);
-  }
+    </p>
 
-  if (theForm.Email.value == "")
-  {
-    alert("Please enter a value for the \"Email\" field.");
-    theForm.Email.focus();
-    return (false);
-  }
+    
 
-  if (theForm.Email.value.length < 2)
-  {
-    alert("Please enter at least 2 characters in the \"Email\" field.");
-    theForm.Email.focus();
-    return (false);
-  }
+    <center>
+    <button id="submit" name="submit" type="submit" value="Submit" class="btn btn-default">Submit
+    </button>
+    <button id="reset" type="reset" name="reset" value="Reset" class="btn btn-danger">Reset</button>
+        </center>
 
-  if (theForm.Email.value.length > 50)
-  {
-    alert("Please enter at most 50 characters in the \"Email\" field.");
-    theForm.Email.focus();
-    return (false);
-  }
-
-  if (theForm.Message.value == "")
-  {
-    alert("Please enter a value for the \"Message\" field.");
-    theForm.Message.focus();
-    return (false);
-  }
-
-  if (theForm.Message.value.length < 2)
-  {
-    alert("Please enter at least 2 characters in the \"Message\" field.");
-    theForm.Message.focus();
-    return (false);
-  }
-
-  if (theForm.Message.value.length > 1000)
-  {
-    alert("Please enter at most 1000 characters in the \"Message\" field.");
-    theForm.Message.focus();
-    return (false);
-  }
-  return (true);
-}
-//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" name="FrontPage_Form1" action="../_vti_bin/shtml.exe/chicago/contact.htm" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" webbot-action="--WEBBOT-SELF--">
-  <!--webbot bot="SaveResults" U-File="_private/contactlog.htm" 
-    S-Format="HTML/BR" S-Label-Fields="TRUE" B-Reverse-Chronology="FALSE" 
-    S-Email-Format="TEXT/PRE" S-Email-Address="webadmin@1www.us" 
-    B-Email-Label-Fields="TRUE" B-Email-ReplyTo-From-Field="TRUE" 
-    S-Email-ReplyTo="Email" B-Email-Subject-From-Field="FALSE" 
-    S-Email-Subject="Web CVPP Contact Form" S-Date-Format="%m/%d/%Y" 
-    S-Time-Format="%I:%M:%S %p" S-Builtin-Fields="Date Time" 
-    S-Form-Fields="Name Email Message " 
-    U-Confirmation-Url="sent.htm" startspan --><input type="hidden" name="VTI-GROUP" value="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" -->
- <table border="0" cellpadding="0" cellspacing="1" style="border-collapse: collapse; height: 212px;" id="AutoNumber1" width="212">
-    <tbody><tr>
-      <td align="left" class="style2"><font size="3">Name:&nbsp;&nbsp;</font><!--webbot bot="Validation" b-value-required="TRUE" i-maximum-length="50" i-minimum-length="2" --><input type="text" name="Name" size="30" maxlength="50">
-    </td>
-    </tr>
-    <tr>
-      <td align="left" class="style2"><font size="3">Email:&nbsp;&nbsp;</font>
-      <!--webbot bot="Validation" b-value-required="TRUE" i-maximum-length="50" i-minimum-length="2" --><input type="text" name="Email" size="30" maxlength="50"> 
-    </td>
-    </tr>    
-         <tr><td align="left" width="76%" colspan="1"><font size="3"><align ="top"="">Message:<br>
-      </align></font>
-      &nbsp;<!--webbot bot="Validation" b-value-required="TRUE" i-maximum-length="1000" i-minimum-length="2" --><textarea rows="5" name="Message" cols="31"></textarea></td>
-    </tr>
-  </tbody></table>
-  <p align="center"><input type="submit" value="Submit" name="Submit">&nbsp; 
-  <input type="reset" value="Reset" name="Reset"></p>
+  </div>
 </form>
 
-</td>
-</tr>
-</tbody></table>
 
 <p><br>
 
