@@ -174,7 +174,31 @@
 	}
     )(window._W && _W.jQuery)
       //-->
+
+
       </script>
+
+<script type="text/javascript">
+//for query string
+    ;(function ($) {
+      $(function () {
+     var queries = {};
+     $.each(document.location.search.substr(1).split('&'),function(c,q){
+      var i = q.split('=');
+      queries[i[0].toString()] = i[1].toString();
+    });
+
+    $('#nameBox').val( queries['name']);
+    $('#emailBox').val(queries['email']);
+    $('#messageBox').val(queries['message']);
+
+    $('#invalidCaptcha').show();
+    });
+
+    })(_W.jQuery);
+
+</script>
+
       
   </head>
   <body class="short-header-page wsite-theme-light  wsite-page-about">
@@ -284,24 +308,24 @@
 <form action="contactus.php" method="post" enctype="multipart/form-data" style="padding:5px;">
   <div class="form-group">
     <label>Name</label> 
-    <input name="name" required="required" class="form-control">
+    <input name="name" required="required" id="nameBox" class="form-control">
   </div>
 
   <div class="form-group">   
     <label style="float: left;">E-Mail</label> <br />
-    <input name="email" type="email" required="required" class="form-control">
+    <input name="email" type="email" id="emailBox" required="required" class="form-control">
   </div>
 
   <div class="form-group">
     <label style="float: left;">Message</label> <br />
-    <textarea  class="form-control" name="message" cols="20" rows="5" required="required" ></textarea> 
+    <textarea  class="form-control" id="messageBox" name="message" cols="20" rows="5" required="required" ></textarea> 
   </div>
 
   <div class="form-group">
       <small>copy the digits from the image into this box</small><br />
  <img src="./captcha.php" width="120" height="30" border="1" alt="CAPTCHA">
     <p><input type="text" size="6" maxlength="5" name="captcha" value="" class="captchaBox" required><br>
-
+      <span id="invalidCaptcha" class="text-danger bold" style="display: none;">Invalid Captcha</span>
     </p>
 
     
@@ -309,7 +333,7 @@
     <center>
     <button id="submit" name="submit" type="submit" value="Submit" class="btn btn-default">Submit
     </button>
-    <button id="reset" type="reset" name="reset" value="Reset" class="btn btn-danger">Reset</button>
+    <button id="reset" type="reset" name="reset" value="Reset" class="btn btn-default">Reset</button>
         </center>
 
   </div>

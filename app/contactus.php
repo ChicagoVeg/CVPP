@@ -2,8 +2,9 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    $from = 'From: ChicagoVeg'; 
-    $to = 'greenish_green@yahoo.com';
+    $from = 'CVPP Contact Form'; 
+    $to = 'info@chicagoveg.com';
+    $subject = 'Message from CVPP Contact Form ';
     
     $subject = 'Email Inquiry';
 
@@ -16,7 +17,7 @@
 if ($_POST['submit']) {
      
     if($_POST['captcha'] != $_SESSION['digit']) { 
-       header('Location: contactInvalidCaptach.html');
+        header("Location: contact.html?name=$name&message=$message&email=$email");
     } else if (mail ($to, $subject, $body, $from)) { 
        header('Location: contactSuccess.html');
     } else { 
